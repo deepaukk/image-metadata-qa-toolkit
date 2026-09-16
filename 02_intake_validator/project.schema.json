@@ -1,469 +1,144 @@
 {
-    "properties": {
-        "subject_name": {
-            "description": "Detailed name of the target subject",
-            "minLength": 1,
-            "title": "Subject Name",
-            "type": "string"
-        },
-        "disambiguation_details": {
-            "description": "If the target is ambiguous (e.g., two mugs next to each other) the collector must specify which object is their target.",
-            "minLength": 1,
-            "title": "Disambiguation Details",
-            "type": "string"
-        },
-        "category": {
-            "description": "Primary classification category",
-            "enum": [
-                "Household Items",
-                "Furniture",
-                "Electronics and Devices",
-                "Tools and Hardware",
-                "Clothing and Accessories",
-                "Sports and Fitness",
-                "Toys and Games",
-                "Stationery and Office",
-                "Food and Beverage",
-                "Musical Instruments",
-                "Transportation",
-                "Medical and Personal Care",
-                "Books and Media",
-                "Religious and Cultural",
-                "Outdoor and Garden",
-                "Environmental and Natural Elements",
-                "Containers and Storage",
-                "Safety and Security",
-                "Crafts and Hobbies",
-                "Pets and Animals",
-                "Fine Art and Museum",
-                "Business and Storefronts",
-                "Bathroom Items",
-                "Baby and Child Care",
-                "Lighting and Electrical",
-                "Signs, Symbols and Icons",
-                "Laundry and Cleaning",
-                "Eyewear",
-                "Shopping and Retail",
-                "Time and Measurement",
-                "Uncommon/Rare Objects",
-                "Text and Documents",
-                "Other",
-                "Uncommon_Rare Objects"
-            ],
-            "title": "Category",
-            "type": "string"
-        },
-        "sub_category": {
-            "description": "Sub-category classification",
-            "enum": [
-                "Kitchen Essentials",
-                "Tableware",
-                "Food Storage",
-                "Food Preparation",
-                "Small Appliances",
-                "Cleaning Supplies",
-                "Home Decor",
-                "Textiles",
-                "Seating",
-                "Tables",
-                "Storage",
-                "Beds",
-                "Outdoor Furniture",
-                "Personal Devices",
-                "Computing",
-                "Home Entertainment",
-                "Photography and Video",
-                "Wearable Tech",
-                "Climate Control",
-                "Hand Tools",
-                "Power Tools",
-                "Fasteners and Materials",
-                "Garden Tools",
-                "Measuring Tools",
-                "Building Materials",
-                "Footwear",
-                "Bags and Luggage",
-                "Headwear",
-                "Accessories",
-                "Outerwear",
-                "Ball Sports Equipment",
-                "Fitness Equipment",
-                "Racquet Sports",
-                "Protective Gear",
-                "Water Sports",
-                "Children's Toys",
-                "Board and Card Games",
-                "Outdoor Toys",
-                "Educational Toys",
-                "Video Games",
-                "Writing Instruments",
-                "Paper Products",
-                "Desk Accessories",
-                "Art Supplies",
-                "Binding and Filing",
-                "Writing Surfaces",
-                "Office Equipment",
-                "Packaged Foods",
-                "Fresh Produce",
-                "Beverages, Drinks and Cocktails",
-                "Baked Goods, Bread and Desserts",
-                "Condiments and Spices",
-                "Drinkware",
-                "Cooked Food and Prepared Dishes",
-                "String Instruments",
-                "Percussion",
-                "Wind Instruments",
-                "Keyboard Instruments",
-                "Personal Mobility",
-                "Motor Vehicles",
-                "Vehicle Parts",
-                "Travel Accessories",
-                "Regional Vehicles",
-                "First Aid",
-                "Personal Hygiene",
-                "Beauty and Cosmetics",
-                "Wellness",
-                "Mobility Aids",
-                "Books",
-                "Physical Media",
-                "Reading Accessories",
-                "Religious Items",
-                "Traditional Items",
-                "Festival and Holiday",
-                "Party Supplies",
-                "Planters and Pots",
-                "Plants",
-                "Outdoor Lighting",
-                "Weather Gear",
-                "Sky and Atmospheric",
-                "Water Bodies",
-                "Landforms and Terrain",
-                "Vegetation and Flora",
-                "Weather Elements",
-                "Celestial and Light",
-                "Natural Textures",
-                "Bottles and Jars",
-                "Boxes",
-                "Baskets",
-                "Bins and Waste",
-                "Fire Safety",
-                "Security",
-                "Emergency Supplies",
-                "Protective Eyewear",
-                "Sewing and Textiles",
-                "Modeling and Building",
-                "Art Creation",
-                "Dogs",
-                "Cats",
-                "Other Pets",
-                "Pet Accessories",
-                "Pet Care Products",
-                "Wild Birds",
-                "Wild Mammals",
-                "Insects and Arthropods",
-                "Marine Life",
-                "Wild Reptiles and Amphibians",
-                "Farm Animals",
-                "Zoo and Exotic Animals",
-                "Paintings",
-                "Sculptures - Small",
-                "Sculptures - Medium",
-                "Sculptures - Large",
-                "Mixed Media Art",
-                "Historical Artifacts",
-                "Public Art and Street Art",
-                "Cultural Exhibits",
-                "Natural History",
-                "Museum Placards",
-                "Exhibition Posters and Information",
-                "Gallery Windows",
-                "Gallery Signage",
-                "Celebrity and Public Figure Posters",
-                "Retail Stores",
-                "Food and Dining",
-                "Services",
-                "Healthcare",
-                "Entertainment and Leisure",
-                "Hospitality",
-                "Professional Services",
-                "Automotive",
-                "Bath Accessories",
-                "Toiletries",
-                "Baby Products",
-                "Child Safety",
-                "Nursery Items",
-                "Light Fixtures",
-                "Bulbs and Components",
-                "Electrical Items",
-                "Traffic and Road Signs",
-                "Business and Commercial Signs",
-                "Public Information and Wayfinding Signs",
-                "Safety and Warning Symbols",
-                "Environmental and Recycling Symbols",
-                "Food and Dietary Symbols",
-                "Technology and Interface Icons",
-                "Sports and Activity Symbols",
-                "Currency and Payment Symbols",
-                "Weather and Temperature Symbols",
-                "Religious and Cultural Symbols",
-                "Care and Maintenance Symbols",
-                "Transportation and Transit Symbols",
-                "Advertisements and Promotional Displays",
-                "Event Signage and Information",
-                "Laundry Items",
-                "Cleaning Products",
-                "Vision Correction",
-                "Shopping Items",
-                "Postal and Shipping",
-                "Clocks and Timers",
-                "Weather Instruments",
-                "Antiques",
-                "Scientific Instruments",
-                "Professional Equipment",
-                "Collectibles",
-                "Instructions and Manuals",
-                "Lists and Inventories",
-                "Book Pages and Text Content",
-                "Educational Content and Classroom Materials",
-                "Forms and Templates",
-                "Labels, Tags and Package Text",
-                "Menus and Directories",
-                "Notices and Announcements",
-                "Promotional Materials and Sale Information",
-                "Receipts and Invoices",
-                "Schedules, Timetables and Itineraries",
-                "Reference Pages",
-                "Certificates and Official Documents",
-                "Credentials and Access Information",
-                "Other"
-            ],
-            "title": "SubCategory",
-            "type": "string"
-        },
-        "indoor_outdoor": {
-            "enum": [
-                "indoor",
-                "outdoor"
-            ],
-            "title": "IndoorOutdoor",
-            "type": "string"
-        },
-        "indoor_lighting": {
-            "description": "Indoor lighting category of the image",
-            "enum": [
-                "Bright Artificial Light",
-                "Dim Artificial Light",
-                "Natural Daylight",
-                "Mixed Lighting",
-                "NA"
-            ],
-            "title": "IndoorLighting",
-            "type": "string"
-        },
-        "outdoor_lighting": {
-            "description": "Outdoor lighting category of the image",
-            "enum": [
-                "Night",
-                "Twilight",
-                "Soft Daylight",
-                "Bright Daylight"
-            ],
-            "title": "OutdoorLighting",
-            "type": "string"
-        },
-        "place_details": {
-            "description": "Classification of place type",
-            "minLength": 1,
-            "title": "Place Details",
-            "type": "string"
-        },
-        "url": {
-            "anyOf": [
-                {
-                    "format": "uri",
-                    "minLength": 1,
-                    "type": "string"
-                },
-                {
-                    "type": "null"
-                }
-            ],
-            "default": null,
-            "description": "URL for the subject",
-            "title": "Url"
-        },
-        "has_text": {
-            "description": "Does the subject contain text on it",
-            "title": "Has Text",
-            "type": "boolean"
-        },
-        "city": {
-            "description": "The closest city (or administration area) (derived from EXIF)",
-            "minLength": 1,
-            "title": "City",
-            "type": "string"
-        },
-        "country": {
-            "description": "The country the image was taken in (derived from EXIF)",
-            "enum": [
-                "Australia",
-                "Austria",
-                "Brazil",
-                "Bulgaria",
-                "Canada",
-                "Chile",
-                "China",
-                "Colombia",
-                "Croatia",
-                "Czech Republic",
-                "Denmark",
-                "Egypt",
-                "Finland",
-                "France",
-                "Germany",
-                "Greece",
-                "Hong Kong",
-                "India",
-                "Indonesia",
-                "Ireland",
-                "Israel",
-                "Italy",
-                "Japan",
-                "Kenya",
-                "Malaysia",
-                "Mexico",
-                "Morocco",
-                "Netherlands",
-                "New Zealand",
-                "Philippines",
-                "Poland",
-                "Portugal",
-                "Romania",
-                "Saudi Arabia",
-                "Singapore",
-                "South Africa",
-                "South Korea",
-                "Spain",
-                "Sweden",
-                "Switzerland",
-                "Taiwan",
-                "Thailand",
-                "Turkey",
-                "UAE",
-                "United Kingdom",
-                "United States",
-                "United Arab Emirates",
-                "Vietnam",
-                "Belgium",
-                "Norway"
-            ],
-            "title": "Country",
-            "type": "string"
-        },
-        "language": {
-            "description": "Language code for the region/locale",
-            "enum": [
-                "ar_AE",
-                "ar_EG",
-                "ar_MA",
-                "ar_SA",
-                "bg_BG",
-                "cs_CZ",
-                "da_DK",
-                "de_AT",
-                "de_CH",
-                "de_DE",
-                "el_GR",
-                "en_AU",
-                "en_CA",
-                "en_GB",
-                "en_IE",
-                "en_IN",
-                "en_KE",
-                "en_NZ",
-                "en_US",
-                "en_ZA",
-                "es_CL",
-                "es_CO",
-                "es_ES",
-                "es_MX",
-                "fi_FI",
-                "fil_PH",
-                "fr_CA",
-                "fr_CH",
-                "fr_FR",
-                "fr_MA",
-                "he_IL",
-                "hi_IN",
-                "hr_HR",
-                "id_ID",
-                "it_CH",
-                "it_IT",
-                "ja_JP",
-                "ko_KR",
-                "ms_MY",
-                "nl_NL",
-                "pl_PL",
-                "pt_BR",
-                "pt_PT",
-                "ro_RO",
-                "sv_SE",
-                "sw_KE",
-                "th_TH",
-                "tr_TR",
-                "vi_VN",
-                "zh_CN",
-                "zh_HK",
-                "zh_SG",
-                "zh_TW",
-                "en_SG",
-                "es_US",
-                "fr_BE",
-                "zh_XC",
-                "nb_NO",
-                "nl_BE",
-                "hi_Latn_IN"
-            ],
-            "title": "Language",
-            "type": "string"
-        },
-        "camera_make": {
-            "description": "The make of the camera (derived from EXIF)",
-            "minLength": 1,
-            "title": "Camera Make",
-            "type": "string"
-        },
-        "camera_model": {
-            "description": "The model of the camera (derived from EXIF)",
-            "minLength": 1,
-            "title": "Camera Model",
-            "type": "string"
-        },
-        "filename": {
-            "description": "The name of file",
-            "minLength": 1,
-            "title": "File name",
-            "type": "string"
-        }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Image Metadata Collection Schema (Demo)",
+  "type": "object",
+  "properties": {
+    "Asset_ID": {
+      "type": [
+        "string",
+        "null"
+      ]
     },
-    "required": [
-        "subject_name",
-        "disambiguation_details",
-        "category",
-        "sub_category",
-        "indoor_outdoor",
-        "indoor_lighting",
-        "outdoor_lighting",
-        "place_details",
-        "has_text",
-        "city",
-        "country",
-        "language",
-        "camera_make",
-        "camera_model",
-        "filename"
-    ],
-    "title": "Image Metadata Collection Schema",
-    "type": "object",
-    "version": "1.0.3"
+    "subject_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "disambiguation_details": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Books and Media",
+        "Clothing and Accessories",
+        "Electronics and Devices",
+        "Furniture",
+        "Household Items",
+        "Outdoor and Garden",
+        "Time and Measurement"
+      ]
+    },
+    "sub_category": {
+      "type": "string",
+      "enum": [
+        "Bags and Luggage",
+        "Books",
+        "Clocks and Timers",
+        "Footwear",
+        "Kitchen Essentials",
+        "Personal Devices",
+        "Plants",
+        "Seating",
+        "Tables",
+        "Tableware"
+      ]
+    },
+    "indoor_outdoor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Indoor Lighting": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Outdoor Lighting": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "place_details": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "has_text": {
+      "type": [
+        "integer",
+        "string",
+        "boolean",
+        "null"
+      ]
+    },
+    "Language_Code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "city": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "camera_make": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "camera_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "filename": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Participant ID": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "UUID": {
+      "type": [
+        "string",
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "category",
+    "sub_category"
+  ],
+  "additionalProperties": true
 }

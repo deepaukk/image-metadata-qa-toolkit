@@ -107,6 +107,7 @@ Windows: use the `.bat` files in each folder.
 - Runs **locally** — no cloud required for QA
 - Example `project.schema.json` and `taxonomy.json` are structural samples; swap for your project
 - Do not commit real deliveries, credentials, or personal data
+- `taxonomy.json` and `project.schema.json` are **synthetic demo files** only (not from any client project). Replace them for real work.
 
 ---
 

@@ -2,10 +2,19 @@
   {
     "category": "Household Items",
     "sub_category": "Tableware",
-    "description": "Dishes and drinkware",
+    "description": "Dishes, cups, cutlery",
     "url_requirement": "Optional",
-    "examples": "Mug, plate, bowl",
-    "notes": "Demo data only",
+    "examples": "Mug, plate, bowl, fork",
+    "notes": "Demo entry only",
+    "privacy_note": ""
+  },
+  {
+    "category": "Household Items",
+    "sub_category": "Kitchen Essentials",
+    "description": "Cookware and utensils",
+    "url_requirement": "Optional",
+    "examples": "Pan, spatula, kettle",
+    "notes": "Demo entry only",
     "privacy_note": ""
   },
   {
@@ -13,26 +22,44 @@
     "sub_category": "Seating",
     "description": "Chairs and sofas",
     "url_requirement": "Optional",
-    "examples": "Chair, stool",
-    "notes": "Demo data only",
+    "examples": "Chair, stool, sofa",
+    "notes": "Demo entry only",
+    "privacy_note": ""
+  },
+  {
+    "category": "Furniture",
+    "sub_category": "Tables",
+    "description": "Tables and desks",
+    "url_requirement": "Optional",
+    "examples": "Desk, coffee table",
+    "notes": "Demo entry only",
     "privacy_note": ""
   },
   {
     "category": "Outdoor and Garden",
     "sub_category": "Plants",
-    "description": "Potted plants",
+    "description": "Potted and garden plants",
     "url_requirement": "Optional",
-    "examples": "Houseplant, fern",
-    "notes": "Demo data only",
+    "examples": "Houseplant, fern, succulent",
+    "notes": "Demo entry only",
     "privacy_note": ""
   },
   {
     "category": "Clothing and Accessories",
     "sub_category": "Bags and Luggage",
-    "description": "Bags",
+    "description": "Bags and travel bags",
     "url_requirement": "Required",
-    "examples": "Backpack, suitcase",
-    "notes": "Demo data only",
+    "examples": "Backpack, handbag, suitcase",
+    "notes": "Demo: URL required example",
+    "privacy_note": ""
+  },
+  {
+    "category": "Clothing and Accessories",
+    "sub_category": "Footwear",
+    "description": "Shoes and boots",
+    "url_requirement": "Optional",
+    "examples": "Sneakers, boots",
+    "notes": "Demo entry only",
     "privacy_note": ""
   },
   {
@@ -40,8 +67,26 @@
     "sub_category": "Clocks and Timers",
     "description": "Timepieces",
     "url_requirement": "Optional",
-    "examples": "Wall clock, timer",
-    "notes": "Demo data only",
+    "examples": "Wall clock, alarm clock, timer",
+    "notes": "Demo entry only",
+    "privacy_note": ""
+  },
+  {
+    "category": "Electronics and Devices",
+    "sub_category": "Personal Devices",
+    "description": "Phones and small electronics",
+    "url_requirement": "Required",
+    "examples": "Phone, tablet, earbuds",
+    "notes": "Demo: URL required example",
+    "privacy_note": ""
+  },
+  {
+    "category": "Books and Media",
+    "sub_category": "Books",
+    "description": "Printed books",
+    "url_requirement": "Optional",
+    "examples": "Novel, textbook",
+    "notes": "Demo entry only",
     "privacy_note": ""
   }
 ]
