@@ -106,7 +106,6 @@ Windows: use the `.bat` files in each folder.
 * Data validation (JSON Schema, enums, EXIF, URL policy)
 * Ops tooling (Tkinter desktop apps + Streamlit visual QA)
 * Delivery packaging (deterministic folder layouts)
-* Documentation under [docs/](docs/)
 
 ---
 
