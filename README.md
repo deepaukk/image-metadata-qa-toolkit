@@ -9,16 +9,24 @@ Designed for pipelines where vendors submit photos + JSON metadata, and the ops 
 ![Tkinter](https://img.shields.io/badge/Desktop-Tkinter-green)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
+## Screenshots
+
+### QA Viewer
+![QA Viewer](docs/screenshots/qa-viewer.png)
+
+### Intake Validator
+![Intake Validator](docs/screenshots/intake-report.png)
+
 ---
 
 ## Problem
 
 Manual QA on thousands of image + metadata pairs is slow:
 
-- Constant switching between spreadsheets, folders, and image viewers
-- Schema / naming issues caught too late
-- URL and taxonomy rules applied inconsistently
-- Delivery folder structures built by hand
+* Constant switching between spreadsheets, folders, and image viewers
+* Schema / naming issues caught too late
+* URL and taxonomy rules applied inconsistently
+* Delivery folder structures built by hand
 
 ## Solution
 
@@ -54,10 +62,10 @@ Vendor delivery folder
 
 | Folder | Tool | Description |
 |--------|------|-------------|
-| [`01_qa_viewer`](01_qa_viewer/) | **QA Viewer** (Streamlit) | Load metadata + images; sample for QA; two-reviewer assignment; image and metadata side-by-side; taxonomy guide; PASS/FAIL + error codes; CSV export |
-| [`02_intake_validator`](02_intake_validator/) | **Intake Validator** (Tkinter) | Image↔JSON pairing, JSON Schema validation, exact enum names, URL required/optional checks, basic EXIF flags |
-| [`03_delivery_packager`](03_delivery_packager/) | **Delivery Packager** (Tkinter) | Build nested delivery folders and external batch metadata for upload |
-| [`04_delete_rejected`](04_delete_rejected/) | **Delete Rejected** (Tkinter) | Delete rejected pairs from a filename list or QA export |
+| [01_qa_viewer](01_qa_viewer/) | **QA Viewer** (Streamlit) | Load metadata + images; sample for QA; two-reviewer assignment; image and metadata side-by-side; taxonomy guide; PASS/FAIL + error codes; CSV export |
+| [02_intake_validator](02_intake_validator/) | **Intake Validator** (Tkinter) | Image↔JSON pairing, JSON Schema validation, exact enum names, URL required/optional checks, basic EXIF flags |
+| [03_delivery_packager](03_delivery_packager/) | **Delivery Packager** (Tkinter) | Build nested delivery folders and external batch metadata for upload |
+| [04_delete_rejected](04_delete_rejected/) | **Delete Rejected** (Tkinter) | Delete rejected pairs from a filename list or QA export |
 
 ---
 
@@ -94,20 +102,19 @@ Windows: use the `.bat` files in each folder.
 
 ## Skills shown
 
-- QA process design (sampling, dual review, rejection codes)
-- Data validation (JSON Schema, enums, EXIF, URL policy)
-- Ops tooling (Tkinter desktop apps + Streamlit visual QA)
-- Delivery packaging (deterministic folder layouts)
-- Documentation under [`docs/`](docs/)
+* QA process design (sampling, dual review, rejection codes)
+* Data validation (JSON Schema, enums, EXIF, URL policy)
+* Ops tooling (Tkinter desktop apps + Streamlit visual QA)
+* Delivery packaging (deterministic folder layouts)
+* Documentation under [docs/](docs/)
 
 ---
 
 ## Notes
 
-- Runs **locally** — no cloud required for QA
-- Example `project.schema.json` and `taxonomy.json` are structural samples; swap for your project
-- Do not commit real deliveries, credentials, or personal data
-- `taxonomy.json` and `project.schema.json` are **synthetic demo files** only (not from any client project). Replace them for real work.
+* Runs **locally** — no cloud required for QA
+* `taxonomy.json` and `project.schema.json` are **synthetic demo files** only (not from any client project). Replace them for real work.
+* Do not commit real deliveries, credentials, or personal data
 
 ---
 
