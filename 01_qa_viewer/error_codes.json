@@ -1,0 +1,19 @@
+[
+  {"code": "FN-001", "reason": "Image and JSON filenames do not match"},
+  {"code": "FN-002", "reason": "Missing image or missing JSON for a pair"},
+  {"code": "FN-003", "reason": "Duplicate image"},
+  {"code": "MD-001", "reason": "Missing required fields in JSON"},
+  {"code": "MD-002", "reason": "Field left blank instead of \"NA\""},
+  {"code": "MD-003", "reason": "Disambiguation_details missing correct description/specs (products)"},
+  {"code": "MD-004", "reason": "Incorrect or incomplete metadata"},
+  {"code": "SUB-001", "reason": "Wrong category or sub-category"},
+  {"code": "URL-001", "reason": "URL does not match the exact product/variant in the photo"},
+  {"code": "URL-002", "reason": "Missing URL when one is required"},
+  {"code": "URL-003", "reason": "Need a Google Maps URL"},
+  {"code": "IMG-001", "reason": "Object fills less than 10% of the frame"},
+  {"code": "IMG-002", "reason": "Image is blurry / out of focus"},
+  {"code": "IMG-003", "reason": "Phone tilted / bad angle"},
+  {"code": "IMG-004", "reason": "Photo edited, cropped, or filters used"},
+  {"code": "PII-001", "reason": "Contains PII that should not be present"},
+  {"code": "OTH-001", "reason": "Other (write clear note)"}
+]

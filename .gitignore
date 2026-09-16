@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Runtime / local data (never commit real deliveries)
+qa_results/
+logs/
+*.log
+**/Intake_Report_*.xlsx
+**/Metadata_Batch_*.xlsx
+**/Skipped_Report_*.xlsx
+
+# Large / private
+*.zip
+node_modules/

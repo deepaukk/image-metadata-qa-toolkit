@@ -1,0 +1,6 @@
+# Image Metadata QA Toolkit – install per tool or all
+pandas>=2.0
+openpyxl>=3.1
+Pillow>=10.0
+jsonschema>=4.0
+streamlit>=1.28
